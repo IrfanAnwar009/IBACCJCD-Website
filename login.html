@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<DIV ALIGN="CENTER" STYLE="background:blue">
+<FONT SIZE=+2 COLOR="WHITE">IBA COMMUNITY COLLEGE JACOBABAD<BR>
+<FONT SIZE=+1>MERIT-QUILITY-EXELLENCE</FONT>
+</FONT>
+</DIV>
+<H2>LOG IN TO PROCEED THIS WEBSITE</H2>
+<TITLE>LOG IN
+</TITLE>
+<HR>
+</HR>
+</HEAD>
+<BODY BGCOLOR="GREY">
+<CENTER><IMG SRC="iba2.jpg" HEIGHT=200 WIDTH=1300></IMG></CENTER>
+<BR><BR>
+<HR></HR>
+</BODY>
+<TABLE ALIGN="CENTER">
+<TR>
+<TD>NAME</TD><TD><INPUT TYPE = "TEXT" ID="txt"></input></TD>
+</TR>
+<TR>
+<TD>PASSWORD</TD><TD><INPUT TYPE = "password" ID="pass"></input></TD>
+</TR>
+<TR>
+<TD><INPUT TYPE = "submit" onClick="myFunction()"></input></TD>
+</TR>
+</TABLE>
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var txtId = document.getElementById("txt");
+	var txtPas = document.getElementById("pass");
+	var text1 = txtId.value;
+	var text2 = txtPas.value;
+	document.getElementById("demo").innerHTML = "login successfully";
+	if(text1 =="BUBLU" && text2 == "BUBLY"){
+		document.getElementById("demo").innerHTML = "login successfully";	
+		window.location.href="home.html";	
+		window.confirm("Login successfully");
+	}
+	else{
+	document.getElementById("demo").innerHTML = "invalid email or password";	
+	window.alert("invalid email or password");
+	}	
+}
+</script>
+</HTML>
